@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mytv</title>
+    <title>Simulador de TV</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <img src="https://private-user-images.githubusercontent.com/203570197/427759209-73c06a43-efe2-49a4-96b9-d8afab210b26.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMxNzEyNTgsIm5iZiI6MTc0MzE3MDk1OCwicGF0aCI6Ii8yMDM1NzAxOTcvNDI3NzU5MjA5LTczYzA2YTQzLWVmZTItNDlhNC05NmI5LWQ4YWZhYjIxMGIyNi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyOFQxNDA5MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hY2Y3ODNiZTcxOTlhNDc2YTQ2ZDlkNGVlMGMzNDU3OTFhMWRiM2Q3YmJjMWNiOGYyZDAyZGFjYWFiOGI2NWUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.a_ySbeyEZmFn1kDdD5O504P98ksfHThVREj_l6WGVGU" alt="" srcset="">
-    <button id="trocar canal-"> channel -</button>
-    <button id="trocar canal+"> channel +</button>
-    <button id="trocar canal"> volume +</button>
-    <button id="trocar canal"> volume - </button>
-    <button id="trocar canal"> mute +</button>
-
+    <div class="tv-container">
+        <img id="tv-screen" src="https://private-user-images.githubusercontent.com/203570197/429060314-1f80b1f0-03a5-49e4-895f-1c3417e16ec8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM1MTYxNDIsIm5iZiI6MTc0MzUxNTg0MiwicGF0aCI6Ii8yMDM1NzAxOTcvNDI5MDYwMzE0LTFmODBiMWYwLTAzYTUtNDllNC04OTVmLTFjMzQxN2UxNmVjOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwMVQxMzU3MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNzZjNjkyMWM2ZGQ3ZmQ0NjU4MDQ2ZWNiMzI5YjU2MTEwNzA1ZGMzNjlkY2Q1Njc1Y2U3NmMyMDNhYTc0YmY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.oSCniDnFRiR71HRJVo4c61jYrRHHooCcNegg4uv3DBc" alt="TV Desligada">
+        <div class="controls">
+            <button id="power">Ligar/Desligar</button>
+            <button id="channel-down">Channel -</button>
+            <button id="channel-up">Channel +</button>
+            <button id="volume-up">Volume +</button>
+            <button id="volume-down">Volume -</button>
+            <button id="mute">Mute</button>
+        </div>
+        <p id="status">TV Desligada</p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
